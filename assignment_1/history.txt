@@ -1,0 +1,75 @@
+    1  /cita/local/bin/passwd
+    2  exit
+    3  cd /fs/lustre/scratch/jewelcao
+    4  exit
+    5  cd /fs/lustre/scratch/jewelcao
+    6  pwd
+    7  ls
+    8  cd CTA200_2025
+    9  ls
+   10  vi README.md
+   11  pwd
+   12  git init
+   13  git add README.md
+   14  git commit
+   15  pwd
+   16  cd /home/murray
+   17  pwd
+   18  ls
+   19  /home/murray/tmp
+   20  cd /home/murray/tmp
+   21  ls
+   22  cp /home/murray/tmp/Hello_world.py /fs/lustre/scratch/jewelcao/CTA200_2025/assignment_1
+   23  cd /fs/lustre/scratch/jewelcao/CTA200_2025
+   24  pwd
+   25  ls
+   26  cd assignment_1
+   27  ls
+   28  mv Hello_world.py Hello_world_cao.c/py
+   29  mv Hello_world.py Hello_world_cao.py
+   30  ls
+   31  python Hello_world_cao.py
+   32  find /home/murray -name 'Hello_world.c'
+   33  cd /home/murray 
+   34  pwd
+   35  ls
+   36  cd Papers/tmp
+   37  ls
+   38  cp /home/murray/Papers/tmp/Hello_world.c /fs/lustre/scratch/jewelcao/CTA200_2025/assignment_1
+   39  cd /fs/lustre/scratch/jewelcao/CTA200_2025/assignment_1
+   40  ls
+   41  mv Hello_world.c Hello_world_cao.c
+   42  ls
+   43  cd /fs/lustre/scratch/jewelcao
+   44  pwd
+   45  cd /fs/lustre/scratch/jewelcao/CTA200_2025/assignment_1
+   46  module load gcc
+   47  gcc Hello_world_cao.c
+   48  ls
+   49  module list
+   50  gcc -o Hello_world.x Hello_world_cao.c
+   51  ls
+   52  rm a.out
+   53  ls
+   54  ./Hello_world.x 
+   55  python ./Hello_world_cao.py
+   56  module avail python
+   57  python/3.10.16 ./Hello_world_cao.py
+   58  module load python/3.10.16
+   59  python/3.10.16 ./Hello_world_cao.py
+   60  module load python
+   61  python Hello_world_cao.py
+   62  module list
+   63  module purge
+   64  module load python/3.10.2
+   65  python Hello_world_cao.py 
+   66  vi Hello_world_cao.py
+   67  python Hello_world_cao.py
+   68  vi Hello_world_cao.c
+   69  ./Hello_world.x
+   70  gcc -o Hello_world_cao.x Hello_world_cao.c
+   71  ls
+   72  ./Hello_world_cao.x | tee output_c.txt
+   73  python Hello_world_cao.py | tee output_python.txt
+   74  ls
+   75  history > history.txt
